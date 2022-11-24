@@ -1,0 +1,25 @@
+{
+  "name": "create-template",
+  "version": "0.1.0",
+  "description": "a template about create projects",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "WalkAlone0325",
+  "license": "MIT",
+  "bin": {
+    "create-template": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*",
+    "!template-*/dist",
+    "!template-*/node_modules",
+    "!template-*/pnpm-lock.yaml",
+    "!template-*/deno.lock"
+  ],
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "homepage": ""
+}
