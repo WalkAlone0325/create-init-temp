@@ -1,22 +1,22 @@
-# create-template
+# create-init-temp
 
 create project templates
 
 With NPM:
 
 ```bash
-$ npm create template@latest
+$ npm create init-temp@latest
 ```
 
 With YARN:
 
 ```bash
-$ yarn create template
+$ yarn create init-temp
 ```
 
 With PNPM:
 
 ```bash
-$ pnpm create template
+$ pnpm create init-temp
 ```
 
