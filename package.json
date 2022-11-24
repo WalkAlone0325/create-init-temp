@@ -9,6 +9,9 @@
     "vue",
     "library"
   ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "author": "WalkAlone0325",
   "license": "MIT",
   "bin": {
