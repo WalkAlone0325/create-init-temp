@@ -1,10 +1,14 @@
 {
   "name": "create-init-temp",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "a template about create projects",
   "main": "index.js",
   "type": "module",
-  "keywords": [],
+  "keywords": [
+    "init project",
+    "vue",
+    "library"
+  ],
   "author": "WalkAlone0325",
   "license": "MIT",
   "bin": {
@@ -21,5 +25,12 @@
   "engines": {
     "node": "^14.18.0 || >=16.0.0"
   },
-  "homepage": ""
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WalkAlone0325/create-init-temp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WalkAlone0325/create-init-temp/issues"
+  },
+  "homepage": "https://github.com/WalkAlone0325/create-init-temp#readme"
 }
