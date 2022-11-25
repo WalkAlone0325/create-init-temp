@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url'
 import minimist from 'minimist'
 import prompts from 'prompts'
 import { yellow, blue, green, reset, red, lightGreen } from 'kolorist'
+import { title } from './utils/banner.js'
 
 const argv = minimist(process.argv.slice(2), { string: '_' })
 const cwd = process.cwd()
@@ -53,10 +54,13 @@ const TEMPLATES = FRAMEWORKS.map(
 ).reduce((a, b) => a.concat(b), [])
 
 const renameFiles = {
-  _gitignore: '.gitignore'
+  _gitignore: '.gitignore',
+  '_eslintrc.cjs': '.eslintrc.cjs'
 }
 
 async function init() {
+  console.log(`\n${title}\n`)
+
   let targetDir = formatTargetDir(argv._[0])
   let template = argv.template || argv.t
 
@@ -199,7 +203,7 @@ async function init() {
     write('package.json', JSON.stringify(pkg, null, 2))
 
     const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent)
-    console.log(pkgInfo)
+
     const pkgManager = pkgInfo ? pkgInfo.name : 'npm'
 
     console.log(`\n完成。可以运行:\n`)

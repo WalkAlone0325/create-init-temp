@@ -1,6 +1,6 @@
 {
   "name": "create-init-temp",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "a template about create projects",
   "main": "index.js",
   "type": "module",
@@ -37,5 +37,10 @@
     "kolorist": "^1.6.0",
     "minimist": "^1.2.7",
     "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "gradient-string": "^2.0.2",
+    "tinycolor": "^0.0.1",
+    "tinycolor2": "^1.4.2"
   }
 }
