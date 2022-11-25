@@ -9,9 +9,6 @@
     "vue",
     "library"
   ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "author": "WalkAlone0325",
   "license": "MIT",
   "bin": {
@@ -35,5 +32,10 @@
   "bugs": {
     "url": "https://github.com/WalkAlone0325/create-init-temp/issues"
   },
-  "homepage": "https://github.com/WalkAlone0325/create-init-temp#readme"
+  "homepage": "https://github.com/WalkAlone0325/create-init-temp#readme",
+  "dependencies": {
+    "kolorist": "^1.6.0",
+    "minimist": "^1.2.7",
+    "prompts": "^2.4.2"
+  }
 }
